@@ -28,7 +28,6 @@ const [ToggleF, setToggleF] = useState(false);
 const Show ={
    height: "auto"
   
-    
 };
 
 
@@ -150,7 +149,7 @@ const Show ={
 
                  {Toggle?
                 
-                     <div className="Pop-box  " style={Show} >
+                     <div className="Pop-box  "  >
                     
                             <article className="detail ">
 
@@ -168,25 +167,8 @@ const Show ={
                             </article>
 
                  </div>
-            : 
-            <div className="Pop-box  "  >
-                    
-                            <article className="detail ">
-
-                                <div className="detail-title">
-                                    Caregiver
-                                </div>
-
-                                <div className="detail-desc">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
-                                </div>
-
-                                <button className="service-buttons">Get Started </button> 
-                               
-                            
-                            </article>
-
-                 </div>
+            : console.log("k")
+           
             }
                  {/* end of pop box of care-giver */}                    
                 
