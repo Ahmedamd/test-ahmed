@@ -82,10 +82,12 @@ function Footer() {
 
 
                       <div className="menuBoc">
-                         <Link className="txt"  to ="/process"></Link>
+                         <Link className="txt"  to ="/process">
+                              <article className="item">Our Process</article>
+                         </Link>
                           
                          
-                         <article className="item">Our Process</article>
+                       
                          {/* <hr className ="small-line"/> */}
                     </div>        
                    

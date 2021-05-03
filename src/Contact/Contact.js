@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import emailjs from 'emailjs-com';
 
 
 function Contact() {
@@ -21,9 +22,23 @@ function Contact() {
   
    
     };
+function sendEmail(e){
+  e.preventDefault();
+
+    emailjs.sendForm('service_zre2p9n', 'template_dxiiv5o', e.target, 'user_NUpGT9fUNA0oPcI3dPi7i')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+
+}
+   
   
     return (
-        <div className ="Contact">
+        <div className ="Contact " >
             
             <div className="
             title-container ">
@@ -42,16 +57,16 @@ function Contact() {
 
             <div className="form-container">
 
-                <form className="form" action="submit">
+                <form className="form" action="submit" onSubmit={sendEmail}>
                     <input className="input " type="text" name="name" id="" placeholder=" Name*" required
                     />  
                           
 
-                    <input className="input " type="text" name="" id=""placeholder="Phone Number*" required />
+                    <input className="input " type="text" name="phone" id=""placeholder="Phone Number*" required />
                            
                            
 
-                    <input className="input " type="email" name="" id="" placeholder="Email*" required/>
+                    <input className="input " type="email" name="email" id="" placeholder="Email*" required/>
 
                     <div class="position">
                         <div className="text">Would you like to leave a message?</div>
@@ -67,7 +82,7 @@ function Contact() {
                     </div>
 
                    {Toggle?
-                    <textarea name="message" className="text-area" 
+                    <textarea name="message"  className="text-area" 
 
                     placeholder="Message" 
                      style={height}

@@ -32,6 +32,25 @@
   cursor: pointer;
 }
 
+.fade {
+  transition: all 2s ease-in;
+}
+
+.fade-b {
+  animation-name: example !important;
+  animation-duration: 10s !important;
+}
+
+/* The animation code */
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .left {
   top: 50%;
   left: 0%;

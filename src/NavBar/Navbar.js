@@ -49,7 +49,7 @@ const height ={
 
                     
                      <div className="middle-section-b " >
-                            <Link className ="LINK"style={navStyle} to ='/mainpage'>
+                            <Link className ="LINK"style={navStyle} to = "/mainpage">
                               <div className = "pages">Home </div>
                             </Link>
 

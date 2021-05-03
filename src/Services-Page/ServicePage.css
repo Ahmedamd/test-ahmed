@@ -64,8 +64,30 @@
 .service-buttons {
   margin-top: 2rem;
   font-size: 1.2rem;
-  background: none;
   color: var(--Iconcolour);
+  font-weight: 600;
+  padding: 0.8rem;
+  background: #20426c;
+  color: white;
   border: none;
-  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-buttons:hover {
+  background: #346eb4;
+  transition: all 1s ease;
+}
+
+.detail-a {
+  margin-top: 1em;
+}
+
+.lineService {
+  background: lightgray;
+  border: none;
+  width: 1000px;
+  height: 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

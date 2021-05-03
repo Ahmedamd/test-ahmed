@@ -21,7 +21,7 @@ function App() {
 
           <Route path = "/mainpage" component ={MainPage}></Route>
           {/* <MainPage/> */}
-          <Route path = "/contact" component ={ContactPage}></Route>-
+          <Route path = "/contact" component ={ContactPage}></Route>
           {/* <ContactPage/> */}
           <Route path = "/about" component ={AboutPage}></Route>
           {/* <AboutPage/> */}
@@ -32,18 +32,6 @@ function App() {
            <Route path ="/process" component = {ProcessPage}></Route>
           {/* <ServicePage/> */}
       </Router>
-     
-      {/* <div className="contact-page">
-            
-            <br/>
-            <br/>
-            <br/>
-        
-      </div>
-     */}
-  
-   
-
     </div>
   );
 }

@@ -15,6 +15,7 @@ import PSW from '../i/PSW.svg';
 import sweeping from '../i/sweeping.svg';
 import mealprep from '../i/mealprep.svg';
 import nurse from '../i/nurse.svg';
+import {Link} from 'react-router-dom';
 
 
 function ServicePage() {
@@ -27,7 +28,6 @@ const [ToggleF, setToggleF] = useState(false);
 
 const Show ={
    height: "auto"
-  
 };
 
 
@@ -161,7 +161,13 @@ const Show ={
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
-                                <button className="service-buttons">Get Started </button> 
+                                <Link to = "/contact">
+
+                                      <button className="service-buttons">Get Started </button> 
+                                
+                                </Link>
+
+                          
                                
                             
                             </article>
@@ -219,18 +225,26 @@ const Show ={
 
                             </article>
 
-                                <article className="detail">
+                                 <hr className="lineService"/>
+
+                                <article className="detail-a">
 
                                     <div className="detail-title">
                                         Nursing 
                                     </div>
 
+                               
+
                                 <div className="detail-desc">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
-                                <button className="service-buttons">Get Started </button> 
+                                <Link to = "/contact">
+                                    <button className="service-buttons">Get Started </button> 
 
+                                </Link>
+
+                                
                                     </article>
 
                         </div>
@@ -277,9 +291,13 @@ const Show ={
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
-                                <button className="service-buttons">Get Started </button> 
+                                <Link to = "contact">
+                                 <button className="service-buttons">Get Started </button> 
 
 
+                                </Link>
+
+                               
                             </article>
 
                  </div>
@@ -327,7 +345,11 @@ const Show ={
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
+                                <Link to = "/contact">
+                                
                                 <button className="service-buttons">Get Started </button> 
+
+                                </Link>
 
 
                             </article>
@@ -372,8 +394,11 @@ const Show ={
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
-                                <button className="service-buttons">Get Started </button> 
+                                <Link to = "/contact">
+                                     <button className="service-buttons">Get Started </button> 
 
+                                </Link>
+                           
 
                             </article>
 
@@ -420,7 +445,9 @@ const Show ={
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam quibusdam iste id consequatur delectus reprehenderit quasi harum magnam distinctio!
                                 </div>
 
+                                <Link to = "/contact">
                                 <button className="service-buttons">Get Started </button> 
+                                </Link>
 
 
                             </article>

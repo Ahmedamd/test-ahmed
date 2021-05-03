@@ -1,6 +1,6 @@
 import React from 'react';
 import './Care.css';
-
+import {Link} from 'react-router-dom';
 
 function Care() {
     return (
@@ -74,9 +74,13 @@ function Care() {
                         </div>
                         <br/>
                         
-                        <button className="btn-b caps " type="submit ">
-                            Schedule free assessment
-                        </button>
+                        <Link to ="/contact">
+
+                            <button className="btn-b caps " type="submit ">
+                                Schedule free assessment
+                            </button>
+                        </Link>
+
                  </div>
 
                  </div>
